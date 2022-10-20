@@ -36,4 +36,8 @@ $connection = mysqli_connect($server_name, $user_name, $password, $DbName);
 
 mysqli_query($connection, "INSERT INTO `respostas` (`nome`, `email`, `motivo`, `mensagem`) VALUES ('$nome', '$email', '$motivo', '$mensagem');");
 
+$connection = mysqli_connect($server_name, $user_name, $password, $DbName);
+
+$newURL = "endPage";
+header("Location: $newURL.php");
 ?>
